@@ -1,7 +1,14 @@
 def find_largest(numbers: list) -> int:
-    maxe = 0
+    maxe = numbers[0]
     for number in numbers:
         if number > maxe:
+            maxe = number
+    print(maxe)
+
+def find_smallest(numbers: list) -> int:
+    maxe = numbers[0]
+    for number in numbers:
+        if number < maxe:
             maxe = number
     print(maxe)
 
